@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rosco de la Energía</title>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top banner">
+    <div class="bt">
+      <h1>El Rosco de la Energía</h1>
+      <p>Energías limpias y renovables · 4.º de Primaria</p>
+    </div>
+    <picture class="scene-pic">
+      <source srcset="img/cabecera-oscuro.svg" media="(prefers-color-scheme: dark)">
+      <img class="scene" src="img/cabecera-claro.svg" width="440" height="210" alt="Dibujo de un paisaje con tres aerogeneradores, una casa con placas solares en el tejado, un campo de paneles solares y el sol en el cielo">
+    </picture>
+  </header>
+
+  <main class="game">
+    <div class="rosco" id="rosco">
+      <ol class="nodes" id="nodes" aria-label="Rosco de letras"></ol>
+      <div class="hub" id="hub">
+        <span class="lab" id="hubLab">Tiempo</span>
+        <span class="time" id="hubTime">8:00</span>
+        <div class="tally">
+          <span><i class="d-ok"></i><b id="tOk">0</b> bien</span>
+          <span><i class="d-bad"></i><b id="tBad">0</b> <em class="lb" id="lblBad">mal</em></span>
+          <span><i class="d-left"></i><b id="tLeft">22</b> faltan</span>
+        </div>
+      </div>
+    </div>
+    <section class="panel" id="panel" aria-live="polite" aria-label="Zona de juego"></section>
+  </main>
+
+  <section class="learn" aria-labelledby="learnT">
+    <h2 id="learnT">Cuatro ideas para entender la energía</h2>
+    <ul class="cards">
+      <li class="card"><span class="ic s pic" aria-hidden="true">☀️</span><b>Energías renovables</b><p>Vienen del Sol, del viento, del agua o de las plantas. No se agotan y contaminan muy poco.</p><span class="tag">Letras S · V · E · H · O · B · R</span></li>
+      <li class="card"><span class="ic w pic" aria-hidden="true">🛢️</span><b>Energías no renovables</b><p>El carbón, el petróleo y el gas natural son combustibles fósiles: se agotan y, al quemarlos, contaminan el aire.</p><span class="tag">Letras C · P · G · F · Q</span></li>
+      <li class="card"><span class="ic v pic" aria-hidden="true">⚙️</span><b>De la fuerza a la electricidad</b><p>Los molinos y las turbinas giran con el viento o el agua y mueven un generador que produce electricidad.</p><span class="tag">Letras M · T · I</span></li>
+      <li class="card"><span class="ic o pic" aria-hidden="true">💡</span><b>Ahorra energía</b><p>Apagar la luz, desenchufar aparatos y usar bombillas LED ayudan a gastar menos y a cuidar el planeta.</p><span class="tag">Letras A · D · L · N · U</span></li>
+    </ul>
+  </section>
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>
